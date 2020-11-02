@@ -3,7 +3,7 @@ import random
 yön = ['soldan sağa','şağdan sola','aşağıdan yukarı','yukarıdan aşağı']
 orien = enumerate(yön, start=0)#enum tanımı
 orientation = list(orien)#enum ı listeye ceviriyoruz yazdırabilmek için
-#Soru 1-a
+
 def matris_1(m,n):
     matris1 = []
     for sat in range(m):
@@ -14,7 +14,6 @@ def matris_1(m,n):
             matris1[sat].append(char1)
     return matris1
 
-#Soru 1-b
 def matris_2(satır,sutun,myword,ori):
 #önce ori kontrolü yapıyoruz daha sonra verilen karakter matristen buyuk mu diye bakıyoruz
 #egerdegilse ori degerine göre matrise işliyoruz
@@ -57,7 +56,6 @@ def matris_2(satır,sutun,myword,ori):
                     satır+=1
     return deneme_1
 
-#Soru 1-c
 def matris_3():
     polidrom_mu=[]
     polid=''
