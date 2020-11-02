@@ -1,6 +1,5 @@
 import random
 
-#Soru 1-a
 def vektor_olustur(n):
     vektor1=[]
     for a in range(n):
@@ -8,7 +7,6 @@ def vektor_olustur(n):
         vektor1.append(sayi)
     return vektor1
 
-#Soru 1-b
 def skaler_cap(vek1,vek2):
     if(len(vek1[0]) == len(vek2)):
         toplam = 0
@@ -24,14 +22,12 @@ def skaler_cap(vek1,vek2):
         print("Bu iki vektör çarpılamaz.")
     return new_vek
 
-#Soru 1-c
 def matris_olustur(m,n):
     matris1 = []
     for satır in range(m):
         matris1.append(vektor_olustur(n))
     return matris1
 
-#Soru 1-d
 def matris_carp(mat1,mat2):
     if(len(mat1[0]) == len(mat2)):
         new_matris = skaler_cap(mat1, mat2)
@@ -39,7 +35,6 @@ def matris_carp(mat1,mat2):
         print("Bu iki matris çarpılamaz.")
     return new_matris
 
-#Soru 1-e
 def bes_matris_carp(mat1,mat2,mat3,mat4,mat5):
     carpım1 = matris_carp(mat1,mat2)
     carpım2 = matris_carp(mat3,mat4)
@@ -47,9 +42,6 @@ def bes_matris_carp(mat1,mat2,mat3,mat4,mat5):
     carpım4 = matris_carp(carpım3,mat5)
     return carpım4
 
-#Soru 1-f sende
-
-#Soru 1-g
 def test():
     test1 = vektor_olustur(5)
     print(test1)
